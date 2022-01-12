@@ -1,0 +1,118 @@
+
+body
+{
+    font-family: 'The Nautigal', cursive;
+    font-size: 40px;
+    background-color: #eeeeee;
+}
+ol.a
+{
+    background-color: #cccccc;
+    
+
+}
+li 
+{
+  background-color: #dddddd;
+}
+li:nth-child(odd) 
+{
+  background: #eeeeee;
+
+}
+
+
+.container
+{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-style:groove;
+  width: 500px;
+  padding: 0;
+  height: auto;
+  background-color: #dddddd;
+}
+
+
+.sideL
+{
+  float: left;
+  width: 5%;
+  min-height: 600px;
+
+  background-color: #dddddd;
+}
+
+
+.top
+{
+
+  width: 90%;
+  height: 60px;
+  background-color: #dddddd;
+}
+
+
+.notes
+{
+  padding: 0px;
+  width: 90%;
+  min-height: 560px;
+  height: auto;
+  background-color: #dddddd;
+}
+
+
+.bottom
+{
+
+  width: 90%;
+  height: 10px;
+  background-color: #dddddd;
+}
+
+.sideR
+{
+  float: right;
+  width: 5%;
+  min-height: 600px;
+  background-color: #dddddd;
+}
+
+#addButton
+{
+  transition-duration: 0.4s;
+  background-color: #dddddd;
+  border: #ffffff;
+  display: inline-block;
+  font-size: 25px;
+  width: 32px;
+  height: 32px;
+ text-align: center;
+ font-family: 'The Nautigal', cursive;
+
+}
+#addButton:hover
+{
+  background-color: #bbbbbb;
+}
+#tekstArea
+{
+  border-style: groove;
+  width: 340px;
+  background:transparent;
+  border: none;
+  font-size: 25px;
+  font-family: 'The Nautigal', cursive;
+  margin-bottom: 10px;
+
+}
+
+#addItem
+{
+  background-color: #cccccc;
+  padding: 0;
+  align-items: center;
+}
