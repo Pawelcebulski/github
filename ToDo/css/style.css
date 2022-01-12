@@ -8,6 +8,8 @@ body
 ol.a
 {
     background-color: #cccccc;
+    list-style: none;
+    padding-inline-start: 0px;
     
 
 }
@@ -19,6 +21,24 @@ li:nth-child(odd)
 {
   background: #eeeeee;
 
+}
+.checkedObj
+{
+  background-color: #15ff00;
+  text-decoration:line-through ;
+}
+
+input[type="checkbox"]
+{
+
+  width: 15px;
+  height: 15px;
+ 
+}
+
+input[type="checkbox"]:checked
+{
+  background-color: #555555;
 }
 
 
@@ -81,7 +101,7 @@ li:nth-child(odd)
   background-color: #dddddd;
 }
 
-#addButton
+input[type=submit]
 {
   transition-duration: 0.4s;
   background-color: #dddddd;
@@ -94,12 +114,21 @@ li:nth-child(odd)
  font-family: 'The Nautigal', cursive;
 
 }
-#addButton:hover
+input[type=submit]:hover
 {
   background-color: #bbbbbb;
 }
-#tekstArea
+
+.deleteButton
 {
+  width: auto !important;
+  float: right; 
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.tekstArea
+{
+
   border-style: groove;
   width: 340px;
   background:transparent;
@@ -110,9 +139,11 @@ li:nth-child(odd)
 
 }
 
+
 #addItem
 {
   background-color: #cccccc;
   padding: 0;
-  align-items: center;
+
+ 
 }
