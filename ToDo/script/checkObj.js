@@ -1,7 +1,22 @@
 function checkObj(idA)
+
 {
-    var sty = document.getElementById(idA);
-    sty.setAttribute=('style', 'background-color: #15ff00 !important; text-decoration:line-through !important');
+
+    
+    let sty = document.getElementById(idA);
+
+
+        if (sty.className =='todo')
+        {
+            sty.className ='done';
+                      
+
+        }
+      else
+        {
+            sty.className ='todo';
+          
+        }
 
 
 
