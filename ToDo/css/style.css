@@ -13,20 +13,32 @@ ol.a
     
 
 }
-li 
+li.todo
 {
   background-color: #dddddd;
 }
-li:nth-child(odd) 
+
+li.done
 {
-  background: #eeeeee;
+  background-color: #73b86d;
 
 }
-.checkedObj
+
+li.done > input[type=text]
 {
-  background-color: #15ff00;
   text-decoration:line-through ;
+  text-decoration-color: #777777 ;
 }
+
+li.done > input[type=submit]
+{
+  background-color: #5eb656;
+}
+li.done > input[type=submit]:hover
+{
+  background-color: #187010;
+}
+
 
 input[type="checkbox"]
 {
@@ -35,12 +47,6 @@ input[type="checkbox"]
   height: 15px;
  
 }
-
-input[type="checkbox"]:checked
-{
-  background-color: #555555;
-}
-
 
 .container
 {
@@ -118,6 +124,8 @@ input[type=submit]:hover
 {
   background-color: #bbbbbb;
 }
+
+
 
 .deleteButton
 {
