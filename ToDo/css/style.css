@@ -1,149 +1,115 @@
-
-body
-{
+* {
     font-family: 'The Nautigal', cursive;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --bg-color: #dddddd;
+    --second-bg-color: #eeeeee;
+}
+
+body {
+    background-color: var(--second-bg-color);
+}
+
+header {
+    text-align: center;
     font-size: 40px;
-    background-color: #eeeeee;
 }
-ol.a
-{
-    background-color: #cccccc;
+
+#list {
     list-style: none;
-    padding-inline-start: 0px;
-    
-
-}
-li 
-{
-  background-color: #dddddd;
-}
-li:nth-child(odd) 
-{
-  background: #eeeeee;
-
-}
-.checkedObj
-{
-  background-color: #15ff00;
-  text-decoration:line-through ;
 }
 
-input[type="checkbox"]
-{
-
-  width: 15px;
-  height: 15px;
- 
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+    margin: 5px 0;
+    padding: 15px 10px;
 }
 
-input[type="checkbox"]:checked
-{
-  background-color: #555555;
+li p {
+    font-size: 28px;
 }
 
-
-.container
-{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  border-style:groove;
-  width: 500px;
-  padding: 0;
-  height: auto;
-  background-color: #dddddd;
+li:nth-child(odd) {
+    background-color: var(--second-bg-color);
 }
 
-
-.sideL
-{
-  float: left;
-  width: 5%;
-  min-height: 600px;
-
-  background-color: #dddddd;
+.container {
+    margin: auto;
+    border-style: groove;
+    width: 500px;
+    min-height: 560px;
+    background-color: var(--bg-color);
 }
 
+#addItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #cccccc;
+    margin-bottom: 20px;
+}
 
-.top
-{
+.input-value {
+    width: 340px;
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    padding: 5px 10px;
+}
 
-  width: 90%;
-  height: 60px;
-  background-color: #dddddd;
+.input-value:focus {
+    outline: none;
+}
+
+.add-item-btn {
+    background-color: var(--bg-color);
+    border: #ffffff;
+    border-radius: 50%;
+    font-size: 25px;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.add-item-btn:hover, .deleteButton:hover {
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #bbbbbb;
 }
 
 
-.notes
-{
-  padding: 0px;
-  width: 90%;
-  min-height: 560px;
-  height: auto;
-  background-color: #dddddd;
+.checkedObj {
+    background-color: #15ff00;
+    text-decoration: line-through;
 }
 
-
-.bottom
-{
-
-  width: 90%;
-  height: 10px;
-  background-color: #dddddd;
-}
-
-.sideR
-{
-  float: right;
-  width: 5%;
-  min-height: 600px;
-  background-color: #dddddd;
-}
-
-input[type=submit]
-{
-  transition-duration: 0.4s;
-  background-color: #dddddd;
-  border: #ffffff;
-  display: inline-block;
-  font-size: 25px;
-  width: 32px;
-  height: 32px;
- text-align: center;
- font-family: 'The Nautigal', cursive;
-
-}
-input[type=submit]:hover
-{
-  background-color: #bbbbbb;
-}
-
-.deleteButton
-{
-  width: auto !important;
-  float: right; 
-  margin-right: 10px;
-  margin-top: 10px;
-}
-.tekstArea
-{
-
-  border-style: groove;
-  width: 340px;
-  background:transparent;
-  border: none;
-  font-size: 25px;
-  font-family: 'The Nautigal', cursive;
-  margin-bottom: 10px;
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
 
 }
 
+input[type="checkbox"]:checked {
+    background-color: #555555;
+}
 
-#addItem
-{
-  background-color: #cccccc;
-  padding: 0;
 
- 
+.deleteButton {
+    border: 1px solid dimgray;
+    padding: 0 8px;
+}
+
+.padding-r-l {
+    padding: 0 30px;
+}
+
+.checked {
+    background-color: #15ff00 !important;
+    text-decoration: line-through !important
 }

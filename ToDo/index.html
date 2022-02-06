@@ -1,48 +1,34 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="eng">
 
-<head> 
+<head>
     <title>ToDo List</title>
     <link href="https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <script type = "text/javascript" src="script/todo.js"></script>
-    <script type = "text/javascript" src="script/deleteObj.js"></script>
-    <script type = "text/javascript" src="script/checkObj.js"></script>
+
+<!--    defer attribute way for whole DOM element -->
+    <script type="text/javascript" src="scripts/todo.js" defer></script>
 </head>
 <body>
-    <div class="container" align ="center">
-      <div class = "sideL"></div>
-      <div class = "sideR"></div>
-      <div class = "notepad">
-      <div class = "top">To do list</div>
-        
+<main class="container">
 
+    <header>
+        <h1 class="top">To do list</h1>
+    </header>
 
-      <div class = "notes"> 
-       <!----------------------Dodawanie elementu-------------------------->
-        <div id = "addItem">
-          <input type="text" class="tekstArea" id="id0" placeholder="Write what you need to do" />
-          <input type="submit" value="+" onclick="dodaj()"/> 
+    <section class="padding-r-l">
+        <!----------------------Dodawanie elementu-------------------------->
+        <div id="addItem">
+            <input type="text" class="input-value" id="input-items" placeholder="Write what you need to do"/>
+            <button type="submit" class="add-item-btn" onclick="addNewItem()">+</button>
         </div>
-       <!------------------------------------------------>
+    </section>
 
-        <div id = "itemList">
-          <ol class="a">
+    <section class="padding-r-l">
+        <ul id="list"></ul>
+    </section>
 
-          </ol>
+</main>
 
-       </div>
-      </div>
-
-
-
-        <div class = "bottom"></div>
-
-      </div>
- 
-      
-
-  </div>
-    
 </body>
 </html>
